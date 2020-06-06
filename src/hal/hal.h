@@ -34,12 +34,13 @@ extern "C" {
 #if !defined(MRBC_TICK_UNIT)
 #define MRBC_TICK_UNIT_1_MS   1
 #define MRBC_TICK_UNIT_2_MS   2
+#define MRBC_TICK_UNIT_3_MS   3
 #define MRBC_TICK_UNIT_4_MS   4
 #define MRBC_TICK_UNIT_10_MS 10
 // Congiguring small value for MRBC_TICK_UNIT may cause a decline of timer
 // accracy depending on kernel constant HZ and USER_HZ.
 // For more information about it on `man 7 time`.
-#define MRBC_TICK_UNIT MRBC_TICK_UNIT_10_MS
+#define MRBC_TICK_UNIT MRBC_TICK_UNIT_4_MS
 // Substantial timeslice value (millisecond) will be
 // MRBC_TICK_UNIT * MRBC_TIMESLICE_TICK_COUNT (+ Jitter).
 // MRBC_TIMESLICE_TICK_COUNT must be natural number
@@ -103,10 +104,6 @@ inline static int hal_flush(int fd)
 /* Wio Terminal */
 void hal_write_string(char* text);
 void hal_init_serial(unsigned int speed);
-
-/* TFT */
-void hal_init_tft(void);
-void* hal_get_tft_obj(void);
   
 /* Line chat */
 void hal_init_sprite(void);

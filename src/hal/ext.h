@@ -16,13 +16,6 @@ bool mrbc_trans_cppbool_value(mrbc_vtype tt);
 
 void define_tft_class(void);
 void define_line_chart_class(void);
-//void define_arduino_class(void);
-//void define_serial_uart_class(void);
-//void define_mqtt_client_class(void);
-//void define_string_ext_class(void);
-//void define_bmp280_class(void);
-//void define_sht31_class(void);
-//void define_sht35_class(void);
-//void define_bme680_class(void);
+void define_buzzer_class(void);
 
 #endif
