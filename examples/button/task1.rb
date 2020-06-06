@@ -1,4 +1,4 @@
-puts "Buzzer for mruby/c"
+puts "Button for mruby/c"
 
 button = Button.new
 buzzer = Buzzer.new
