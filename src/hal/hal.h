@@ -103,6 +103,14 @@ inline static int hal_flush(int fd)
 /* Wio Terminal */
 void hal_write_string(char* text);
 void hal_init_serial(unsigned int speed);
+
+/* TFT */
+void hal_init_tft(void);
+void* hal_get_tft_obj(void);
+  
+/* Line chat */
+void hal_init_sprite(void);
+void* hal_get_sprite_obj(void);
   
 #ifdef __cplusplus
 }

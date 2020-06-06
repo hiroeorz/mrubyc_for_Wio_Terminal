@@ -11,6 +11,8 @@
 #define __LIBMRUBYC_H_
 
 #include <Arduino.h>
+#include "TFT_eSPI.h"
+#include "seeed_line_chart.h"
 #include "mrubyc.h"
 #include "libmrubyc_config.h"
 

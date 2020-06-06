@@ -9,6 +9,7 @@
 
 #include "libmrubyc.h"
 #include "ext.h"
+#include "wio_mrb_lib.c"
 
 bool mrbc_trans_cppbool_value(mrbc_vtype tt)
 {
@@ -22,7 +23,10 @@ bool mrbc_trans_cppbool_value(mrbc_vtype tt)
 
 void mrbc_define_wio_methods(void)
 {
-  define_wio_class();
+  define_tft_class();
+  define_line_chart_class();
+
+  //define_wio_class();
   //define_arduino_class();
   //define_serial_uart_class();
   //define_mqtt_client_class();
