@@ -28,6 +28,3 @@ while true
 
   sleep 0.1
 end
-
-puts "OK complete."
-while true; sleep 1; end
