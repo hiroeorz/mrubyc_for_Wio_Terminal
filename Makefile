@@ -3,7 +3,8 @@
 TARGET=~/Documents/Arduino/libraries/mrubyc_for_Wio_cell_lib
 
 MRBC=mrbc
-SRC=./mrblib/tft.rb ./mrblib/json_generator.rb ./mrblib/json_parser.rb
+SRC=./mrblib/tft.rb ./mrblib/json_generator.rb ./mrblib/json_parser.rb \
+    ./mrblib/button.rb ./mrblib/switch.rb
 RUBY_OUTPUT=./mrblib/wio_mrb_lib.rb
 OUTPUT=./src/hal/wio_mrb_lib.c
 

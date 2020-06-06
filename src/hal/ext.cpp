@@ -26,17 +26,10 @@ void mrbc_define_wio_methods(void)
   define_tft_class();
   define_line_chart_class();
   define_buzzer_class();
+  define_button_class();
+  define_switch_class();
+  define_light_sensor_class();
   
-  //define_wio_class();
-  //define_arduino_class();
-  //define_serial_uart_class();
-  //define_mqtt_client_class();
-  //define_string_ext_class();
-  //define_bmp280_class();
-  //define_sht31_class();
-  //define_sht35_class();
-  //define_bme680_class();
-
   // mrblib以下のrubyソースから生成したバイトコードを読み込む.
   // src/hal/wio_mrb_lib.c
   extern const uint8_t mruby_wio_code[];

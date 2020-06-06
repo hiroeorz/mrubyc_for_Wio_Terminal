@@ -1,5 +1,5 @@
 /*
-  ext_arduino.cpp
+  ext_buzzer.cpp
 
   Defining extension methods of Buzzer
 
