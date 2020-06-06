@@ -1,4 +1,4 @@
-# <img src="./mrubyc.png" width=60 /> mruby/c for Wio Terminal
+# mruby/c for Wio Terminal <img src="./mrubyc.png" width=50 />
 
 ## About
 mruby/c for Wio Terminal はSeeed社が開発した以下の基板上で [mruby/c](https://github.com/mrubyc/mrubyc) を動作させるためのライブラリです。
