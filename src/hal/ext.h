@@ -20,5 +20,6 @@ void define_buzzer_class(void);
 void define_button_class(void);
 void define_switch_class(void);
 void define_light_sensor_class(void);
+void define_ir_emitter_class(void);
 
 #endif

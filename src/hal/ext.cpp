@@ -29,6 +29,7 @@ void mrbc_define_wio_methods(void)
   define_button_class();
   define_switch_class();
   define_light_sensor_class();
+  define_ir_emitter_class();
   
   // mrblib以下のrubyソースから生成したバイトコードを読み込む.
   // src/hal/wio_mrb_lib.c

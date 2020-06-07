@@ -16,6 +16,12 @@
 #include "mrubyc.h"
 #include "libmrubyc_config.h"
 
+// IR Emitter
+#include <IRLibSendBase.h>    // First include the send base
+#include <IRLib_P01_NEC.h>
+#include <IRLib_P02_Sony.h>
+#include <IRLibCombo.h>     // After all protocols, include this
+
 // Sensor libraries
 //#include <Seeed_BMP280.h>
 //#include <SHT31.h>
