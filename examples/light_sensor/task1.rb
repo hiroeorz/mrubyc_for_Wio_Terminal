@@ -15,6 +15,9 @@ while true
 
   label = "LIGHT: #{val}"
   tft.draw_string(label, 50, 100)
-  buzzer.buzz val
+
+  buzzer_val = val.to_f * (256.0 / 1000.0)
+  buzzer.buzz(buzzer_val.to_i)
+
   sleep 0.3
 end
