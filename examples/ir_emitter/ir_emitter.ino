@@ -7,7 +7,7 @@ extern const uint8_t code[];
 static uint8_t mempool[MEMSIZE];
 
 void setup() {
-  delay(1000);
+
 }
 
 void loop() {
