@@ -41,4 +41,10 @@ else
   tft.draw_string("connection failed.", 0, 50)
 end
 
+if wifi.connected?
+  buzzer.buzz(128)
+  sleep 1
+  buzzer.buzz(0)
+end
+
 loop do; end
