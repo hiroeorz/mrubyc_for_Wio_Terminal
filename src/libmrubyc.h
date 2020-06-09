@@ -22,6 +22,9 @@
 #include <IRLib_P02_Sony.h>
 #include <IRLibCombo.h>     // After all protocols, include this
 
+// WiFi
+#include <AtWiFi.h>
+
 // Sensor libraries
 //#include <Seeed_BMP280.h>
 //#include <SHT31.h>

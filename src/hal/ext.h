@@ -21,5 +21,7 @@ void define_button_class(void);
 void define_switch_class(void);
 void define_light_sensor_class(void);
 void define_ir_emitter_class(void);
+void define_wifi_class(void);
+void ddefine_wifi_class(void);
 
 #endif
