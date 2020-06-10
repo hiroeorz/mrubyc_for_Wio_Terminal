@@ -25,6 +25,9 @@
 // WiFi
 #include <AtWiFi.h>
 
+// AMG8833
+#include <Seeed_AMG8833_driver.h>
+
 // Sensor libraries
 //#include <Seeed_BMP280.h>
 //#include <SHT31.h>

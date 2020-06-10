@@ -23,5 +23,6 @@ void define_light_sensor_class(void);
 void define_ir_emitter_class(void);
 void define_wifi_class(void);
 void ddefine_wifi_class(void);
+void define_amg8833_class(void);
 
 #endif
