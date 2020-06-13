@@ -338,6 +338,18 @@ static void class_tft_fill_triangle(mrb_vm *vm, mrb_value *v, int argc)
   SET_TRUE_RETURN();
 }
 
+static void class_tft_width(mrb_vm *vm, mrb_value *v, int argc)
+{
+  if (argc != 0) {
+    DEBUG_PRINTLN("invalid argc");
+    SET_NIL_RETURN();
+    return;
+  }
+
+  int width = tft.width();
+  SET_INT_RETURN(width);
+}
+
 void define_tft_class()
 {
   mrb_class *class_tft;
@@ -362,4 +374,5 @@ void define_tft_class()
   mrbc_define_method(0, class_tft, "fill_round_rect", class_tft_fill_round_rect);
   mrbc_define_method(0, class_tft, "draw_triangle", class_tft_draw_triangle);
   mrbc_define_method(0, class_tft, "fill_triangle", class_tft_fill_triangle);
+  mrbc_define_method(0, class_tft, "width", class_tft_width);
 }
