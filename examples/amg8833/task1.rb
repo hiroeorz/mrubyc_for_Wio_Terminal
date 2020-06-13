@@ -21,6 +21,10 @@ puts "OK."
 # local methods
 ########################################################
 
+def calc_thermal(temps)
+  
+end
+
 def draw_max_min(temps)
   $tft.fill_rect(15 * 8 + 10, 30, 200, 200, $tft.darkcyan)
   $tft.set_text_color($tft.white)
@@ -48,7 +52,7 @@ def color(temp)
 end
 
 ########################################################
-# main method
+# call main method
 ########################################################
 
 main()
