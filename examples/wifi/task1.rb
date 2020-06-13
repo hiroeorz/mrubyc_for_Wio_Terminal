@@ -67,7 +67,7 @@ while true
 
   str = wifi.read_string()
 
-  tft.fill_rect(0, 100, 300, tft.width, tft.cyan)
+  tft.fill_rect(0, 100, tft.width, 300, tft.cyan)
   sleep 1
   tft.draw_string(str, 0, 100)
   sleep 5
