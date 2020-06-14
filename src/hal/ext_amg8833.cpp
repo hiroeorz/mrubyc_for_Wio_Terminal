@@ -38,9 +38,7 @@ static void class_amg8833_read_pixel_temperature(mrb_vm *vm, mrb_value *v, int a
   }
 
   float temps[64];
-  Serial.println("reading temps...");
   amg8833.read_pixel_temperature(temps);
-  Serial.println("reading temps ok.");
   mrbc_value array = mrbc_array_new(vm, 64);
 
   if (temps[0] < 0) {
